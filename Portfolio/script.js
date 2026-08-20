@@ -69,25 +69,16 @@ if (form) {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
         const data = new FormData(form);
+        const name = data.get("name") || "";
+        const email = data.get("email") || "";
+        const message = data.get("message") || "";
 
-        fetch("https://formspree.io/f/xreaeolz", {
-            method: "POST",
-            body: data,
-            headers: {
-                Accept: "application/json",
-            },
-        })
-        .then(response => {
-            if (response.ok) {
-                status.textContent = "Message sent successfully!";
-                form.reset();
-            } else {
-                status.textContent = "Something went wrong. Try again.";
-            }
-        })
-        .catch(() => {
-            status.textContent = "Network error. Please try again.";
-        });
+        const mailtoUrl = `mailto:kamlakantkumar51@gmail.com?subject=Portfolio%20Inquiry%20from%20${encodeURIComponent(name)}&body=${encodeURIComponent(`From: ${name} (${email})\n\n${message}`)}`;
+        window.open(mailtoUrl, "_blank");
+        if (status) {
+            status.textContent = "Mail client opened! Message prepared for kamlakantkumar51@gmail.com";
+        }
+        form.reset();
     });
 }
 
