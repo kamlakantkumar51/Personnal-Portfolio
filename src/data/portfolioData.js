@@ -27,7 +27,7 @@ export const personalInfo = {
 export const statistics = [
   { value: "#7", label: "Codolio College Rank (Targeting #1)", icon: FaTrophy },
   { value: "500+", label: "LeetCode & GFG Problems Solved", icon: FaFileCode },
-  { value: "200+", label: "Day LeetCode Coding Streak", icon: SiLeetcode }, P
+  { value: "200+", label: "Day LeetCode Coding Streak", icon: SiLeetcode },
   { value: "10+", label: "Web Applications Built", icon: FaGithub }
 ];
 
