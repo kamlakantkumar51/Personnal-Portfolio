@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
 import { SiGithub } from 'react-icons/si';
-import { FaExternalLinkAlt, FaRobot, FaSearch, FaHotel, FaUniversity, FaGamepad, FaClock, FaHeart, FaPalette, FaShoppingBag, FaShieldAlt } from 'react-icons/fa';
+import { FaExternalLinkAlt, FaRobot, FaHotel, FaUniversity, FaGamepad, FaClock, FaHeart, FaPalette, FaShoppingBag, FaShieldAlt } from 'react-icons/fa';
 import SectionHeader from '../components/SectionHeader';
 import { projects } from '../data/portfolioData';
 
